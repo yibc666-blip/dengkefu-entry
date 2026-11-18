@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登科赋 · 永久入口发布页</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0f1115; color: #e8e8ea;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+  }
+  .card {
+    max-width: 520px; width: 100%;
+    background: #171a21; border: 1px solid #2a2e3a; border-radius: 16px;
+    padding: 36px 32px;
+  }
+  h1 { font-size: 22px; font-weight: 700; margin-bottom: 6px; letter-spacing: 1px; }
+  .sub { color: #8a8f9c; font-size: 13px; margin-bottom: 28px; }
+  .item {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 16px; border-radius: 10px; background: #1d212b;
+    margin-bottom: 10px; text-decoration: none; color: #e8e8ea;
+    border: 1px solid transparent; transition: border-color .15s;
+  }
+  .item:hover { border-color: #3d82f6; }
+  .host { font-size: 15px; font-weight: 600; word-break: break-all; }
+  .tag {
+    font-size: 11px; padding: 3px 9px; border-radius: 999px; flex-shrink: 0; margin-left: 12px;
+  }
+  .tag.main { background: #1d3a6e; color: #6ea8ff; }
+  .tag.standby { background: #2a2e3a; color: #9aa0ae; }
+  .tag.self { background: #1d4a3a; color: #57c99b; }
+  .notice {
+    margin-top: 24px; padding: 14px 16px; border-radius: 10px;
+    background: #23201a; border: 1px solid #3a332a; font-size: 13px; color: #c9a96a; line-height: 1.7;
+  }
+  .foot { margin-top: 20px; color: #565c69; font-size: 12px; text-align: center; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>登科赋 · 公考刷题</h1>
+  <div class="sub">请收藏本页 —— 无论主域名如何更换，从这里永远能找到最新入口</div>
+
+  <a class="item" href="https://dengkefu.ccwu.cc/" target="_blank" rel="noopener">
+    <span class="host">dengkefu.ccwu.cc</span><span class="tag main">主域名</span>
+  </a>
+  <a class="item" href="https://ishangan.ccwu.cc/" target="_blank" rel="noopener">
+    <span class="host">ishangan.ccwu.cc</span><span class="tag standby">备用 1</span>
+  </a>
+  <a class="item" href="https://pg.ishangan.ccwu.cc/" target="_blank" rel="noopener">
+    <span class="host">pg.ishangan.ccwu.cc</span><span class="tag standby">备用 2</span>
+  </a>
+  <a class="item" href="#" onclick="return false;" style="opacity:.6">
+    <span class="host">denganji.ccwu.cc</span><span class="tag self">本页备用镜像 · 待生效</span>
+  </a>
+
+  <div class="notice">
+    ⚠️ 如上方域名全部打不开，说明主域名临时更换中，请稍后刷新本页获取新地址。建议把本页加入书签并告知同好。
+  </div>
+  <div class="foot">发布页永久地址 · 版本 <span id="v"></span></div>
+</div>
+<script>document.getElementById('v').textContent = new Date().toISOString().slice(0,10);</script>
+</body>
+</html>
